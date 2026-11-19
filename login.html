@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuk Portal | Genius Academy</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 font-sans antialiased text-slate-800 min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+    <!-- Header -->
+    <header class="w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="bimbel4.html" class="text-2xl font-extrabold tracking-tight font-heading flex items-center gap-2">
+                <span class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center text-base shadow-sm">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <div><span class="text-blue-600">Genius</span><span class="text-slate-900">Academy</span></div>
+            </a>
+            <a href="bimbel4.html" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition flex items-center gap-2 px-3.5 py-2 rounded-xl hover:bg-slate-100">
+                <i class="fa-solid fa-arrow-left text-xs"></i>
+                <span>Kembali ke Beranda</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Split Layout Container -->
+    <main class="max-w-6xl w-full mx-auto px-6 py-10 flex-grow flex items-center justify-center">
+        <div class="w-full bg-white rounded-3xl shadow-xl shadow-slate-200/70 border border-slate-200/80 overflow-hidden grid lg:grid-cols-12">
+            
+            <!-- Kolom Kiri: Visual Branding & Info Akademik -->
+            <div class="lg:col-span-6 bg-slate-950 text-white p-8 sm:p-12 flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-sky-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/15 border border-blue-400/30 text-blue-300 font-bold text-xs uppercase tracking-wider mb-6 font-heading">
+                        <i class="fa-solid fa-shield-halved"></i> Portal Akademik Terpadu
+                    </span>
+
+                    <h2 class="text-3xl sm:text-4xl font-extrabold font-heading leading-tight mb-4 tracking-tight">
+                        Selamat Datang Kembali di <span class="text-blue-400">Genius Academy</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-8">
+                        Pantau jadwal sesi bimbingan, hasil evaluasi tryout IRT, modul bank soal HOTS, hingga laporan perkembangan belajar dalam satu dasbor terintegrasi.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3.5 bg-white/5 border border-white/10 p-4 rounded-2xl">
+                            <div class="w-10 h-10 rounded-xl bg-blue-600/25 text-blue-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-calendar-check"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-white font-heading">Jadwal Sesi & Klinik PR</h3>
+                                <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">Cek jadwal tatap muka kelas reguler dan reservasi sesi konsultasi tugas harian.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3.5 bg-white/5 border border-white/10 p-4 rounded-2xl">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-white font-heading">Analisis Skor & Rapor Bulanan</h3>
+                                <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">Grafik perkembangan nilai evaluasi dan pemetaan peluang lolos sekolah/PTN impian.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mt-10 pt-6 border-t border-slate-800/80 grid grid-cols-3 gap-4">
+                    <div>
+                        <div class="text-xl font-extrabold text-white font-heading">92%</div>
+                        <div class="text-[11px] text-slate-400">Lolos Kampus & SMA Favorit</div>
+                    </div>
+                    <div>
+                        <div class="text-xl font-extrabold text-blue-400 font-heading">Maks. 8</div>
+                        <div class="text-[11px] text-slate-400">Siswa per Kelompok Kelas</div>
+                    </div>
+                    <div>
+                        <div class="text-xl font-extrabold text-emerald-400 font-heading">24/7</div>
+                        <div class="text-[11px] text-slate-400">Akses Bank Soal & Modul</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Form Login -->
+            <div class="lg:col-span-6 p-8 sm:p-12 flex flex-col justify-center bg-white">
+                <div class="max-w-md w-full mx-auto">
+                    <div class="mb-7">
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading tracking-tight">Masuk ke Akun</h1>
+                        <p class="text-slate-500 text-sm mt-1.5">Silakan masukkan identitas akun Siswa, Pengajar, atau Admin.</p>
+                    </div>
+
+                    <!-- Alert Notifikasi Error -->
+                    <div id="errorMessage" class="hidden mb-6 p-3.5 bg-red-50 border border-red-200 text-red-700 rounded-xl text-xs font-semibold flex items-center gap-2.5">
+                        <i class="fa-solid fa-circle-exclamation text-red-600 text-base shrink-0"></i>
+                        <span id="errorText">Akun belum terdaftar</span>
+                    </div>
+
+                    <!-- Form Login -->
+                    <form id="loginForm" class="space-y-5">
+                        <div>
+                            <label for="identifier" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-heading">
+                                Username / NIS / Email
+                            </label>
+                            <div class="relative">
+                                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <input type="text" id="identifier" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium text-slate-900" placeholder="Contoh: admin atau email@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label for="password" class="block text-xs font-bold text-slate-700 uppercase tracking-wider font-heading">
+                                    Kata Sandi
+                                </label>
+                            </div>
+                            <div class="relative">
+                                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
+                                <input type="password" id="password" class="w-full pl-10 pr-11 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium text-slate-900" placeholder="Masukkan kata sandi" required>
+                                <button type="button" id="togglePassword" aria-label="Tampilkan atau sembunyikan kata sandi" class="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 text-sm transition cursor-pointer">
+                                    <i id="eyeIcon" class="fa-solid fa-eye"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="submit" id="submitBtn" class="w-full py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-bold font-heading rounded-xl transition shadow-lg shadow-blue-600/25 text-sm flex items-center justify-center gap-2 cursor-pointer">
+                            <span>Masuk Sekarang</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <!-- Info Akses Cepat Demo -->
+                    <div class="mt-6 p-3.5 rounded-xl bg-slate-50 border border-slate-200/80 flex items-center justify-between gap-3">
+                        <div class="text-xs text-slate-600">
+                            <span class="font-bold text-slate-800 block"><i class="fa-solid fa-key text-blue-600 mr-1"></i> Akun Demo Admin:</span>
+                            <span>User: <code class="font-mono font-bold text-slate-800">admin</code> • Sandi: <code class="font-mono font-bold text-slate-800">123</code></span>
+                        </div>
+                        <button type="button" id="fillDemoAdmin" class="px-3 py-1.5 bg-white hover:bg-blue-50 text-blue-600 border border-slate-200 hover:border-blue-300 rounded-lg text-xs font-bold transition shrink-0 cursor-pointer">
+                            Isi Otomatis
+                        </button>
+                    </div>
+
+                    <!-- Link Pendaftaran -->
+                    <div class="mt-7 pt-6 border-t border-slate-100 text-center text-sm text-slate-600">
+                        Belum punya akun portal? 
+                        <a href="pendaftaran.html" class="text-blue-600 font-bold hover:underline ml-1">Daftar Akun Baru</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-xs text-slate-500 border-t border-slate-200/70 bg-white">
+        <p>&copy; 2026 Genius Academy. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/auth.js"></script>
+</body>
+</html>

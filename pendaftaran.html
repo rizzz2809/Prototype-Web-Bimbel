@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Siswa & Akun | Genius Academy</title>
+    
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS & Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-50 font-sans antialiased text-slate-800 min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+    <!-- Header -->
+    <header class="w-full bg-white/90 backdrop-blur-md border-b border-slate-200/80 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <a href="bimbel4.html" class="text-2xl font-extrabold tracking-tight font-heading flex items-center gap-2">
+                <span class="w-9 h-9 rounded-xl bg-blue-600 text-white flex items-center justify-center text-base shadow-sm">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <div><span class="text-blue-600">Genius</span><span class="text-slate-900">Academy</span></div>
+            </a>
+            <a href="bimbel4.html" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition flex items-center gap-2 px-3.5 py-2 rounded-xl hover:bg-slate-100">
+                <i class="fa-solid fa-arrow-left text-xs"></i>
+                <span>Kembali ke Beranda</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- Main Split Layout Container -->
+    <main class="max-w-6xl w-full mx-auto px-6 py-10 flex-grow flex items-center justify-center">
+        <div class="w-full bg-white rounded-3xl shadow-xl shadow-slate-200/70 border border-slate-200/80 overflow-hidden grid lg:grid-cols-12">
+            
+            <!-- Kolom Kiri: Benefit Pendaftaran -->
+            <div class="lg:col-span-5 bg-slate-950 text-white p-8 sm:p-11 flex flex-col justify-between relative overflow-hidden">
+                <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="absolute -bottom-24 -left-24 w-72 h-72 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div class="relative z-10">
+                    <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/15 border border-blue-400/30 text-blue-300 font-bold text-xs uppercase tracking-wider mb-6 font-heading">
+                        <i class="fa-solid fa-user-plus"></i> Registrasi Anggota Baru
+                    </span>
+
+                    <h2 class="text-3xl font-extrabold font-heading leading-tight mb-4 tracking-tight">
+                        Mulai Langkah Prestasi Bersama <span class="text-blue-400">Genius Academy</span>
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-8">
+                        Daftarkan akunmu sekarang untuk memilih paket belajar, menjadwalkan sesi Free Trial, dan mengakses modul latihan soal terarah.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-blue-600/25 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-white font-heading">Gratis 1x Sesi Free Trial & Tes Diagnostik</h3>
+                                <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">Pemetaan kemampuan awal untuk menentukan kelompok belajar yang tepat.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-blue-600/25 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-white font-heading">Klinik PR & Konsultasi Tugas Harian</h3>
+                                <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">Bantuan pembahasan tugas sekolah di luar jam sesi utama tanpa biaya tambahan.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-blue-600/25 text-blue-400 flex items-center justify-center shrink-0 mt-0.5">
+                                <i class="fa-solid fa-check text-xs"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-sm text-white font-heading">Jadwal Sesi Fleksibel</h3>
+                                <p class="text-xs text-slate-400 mt-0.5 leading-relaxed">Tersedia pilihan sesi siang, sore, dan malam dari Senin hingga Sabtu.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative z-10 mt-10 bg-white/5 border border-white/10 rounded-2xl p-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-lg shrink-0">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-white font-heading">Butuh Bantuan Pendaftaran?</p>
+                            <p class="text-[11px] text-slate-400">Admin siap membantu pilih kelas yang sesuai.</p>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/6285712636036?text=Halo%20Admin%20Genius%20Academy,%20saya%20butuh%20bantuan%20untuk%20pendaftaran%20akun%20baru." target="_blank" class="mt-3 w-full inline-flex items-center justify-center gap-2 py-2.5 bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold rounded-xl transition">
+                        <i class="fa-brands fa-whatsapp"></i> Hubungi Admin WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kolom Kanan: Form Pendaftaran -->
+            <div class="lg:col-span-7 p-8 sm:p-11 bg-white flex flex-col justify-center">
+                <div class="max-w-lg w-full mx-auto">
+                    <div class="mb-6">
+                        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 font-heading tracking-tight">Buat Akun Baru</h1>
+                        <p class="text-slate-500 text-sm mt-1">Lengkapi data di bawah ini untuk mengakses Portal Genius Academy.</p>
+                    </div>
+
+                    <!-- Alert Notifikasi Error / Sukses -->
+                    <div id="alertMessage" class="hidden mb-5 p-3.5 rounded-xl text-xs font-semibold flex items-center gap-2.5">
+                        <i id="alertIcon" class="fa-solid fa-circle-exclamation text-base shrink-0"></i>
+                        <span id="alertText">Pesan notifikasi</span>
+                    </div>
+
+                    <!-- Form Daftar Akun -->
+                    <form id="registerForm" class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="nama" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-heading">
+                                    Nama Lengkap
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                                        <i class="fa-solid fa-id-card"></i>
+                                    </span>
+                                    <input type="text" id="nama" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium text-slate-900" placeholder="Nama lengkap Anda" required>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="role" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-heading">
+                                    Daftar Sebagai
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm pointer-events-none">
+                                        <i class="fa-solid fa-user-tag"></i>
+                                    </span>
+                                    <select id="role" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium bg-white text-slate-900" required>
+                                        <option value="siswa" selected>Siswa</option>
+                                        <option value="pengajar">Pengajar / Tentor</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Pilihan Jenjang / Paket -->
+                        <div id="programFieldWrapper">
+                            <label for="programPilihan" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-heading">
+                                Minat Jenjang / Paket Program
+                            </label>
+                            <div class="relative">
+                                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm pointer-events-none">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </span>
+                                <select id="programPilihan" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium bg-white text-slate-900">
+                                    <option value="Program SD (Kelas 1 - 6)">Program SD (Kelas 1 – 6 SD)</option>
+                                    <option value="Program SMP (Kelas 7 - 9)" selected>Program SMP (Kelas 7 – 9 SMP)</option>
+                                    <option value="Program SMA Reguler (Kelas 10 - 11)">Program SMA Reguler (Kelas 10 – 11)</option>
+                                    <option value="Program Kelas 12 & UTBK-SNBT">Program Intensif Kelas 12 & UTBK-SNBT</option>
+                                    <option value="Program Alumni / Gap Year">Program Alumni / Gap Year UTBK</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="identifier" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-heading">
+                                Username / NIS / Email
+                            </label>
+                            <div class="relative">
+                                <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <input type="text" id="identifier" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium text-slate-900" placeholder="Contoh: rizqi2026 atau email@gmail.com" required>
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="password" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-heading">
+                                    Kata Sandi
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </span>
+                                    <input type="password" id="password" class="w-full pl-10 pr-10 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium text-slate-900" placeholder="Min. 6 karakter" minlength="6" required>
+                                    <button type="button" id="togglePassword" aria-label="Tampilkan atau sembunyikan kata sandi" class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-700 text-sm transition cursor-pointer">
+                                        <i id="eyeIcon" class="fa-solid fa-eye"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="confirmPassword" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 font-heading">
+                                    Konfirmasi Sandi
+                                </label>
+                                <div class="relative">
+                                    <span class="absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm">
+                                        <i class="fa-solid fa-shield-check"></i>
+                                    </span>
+                                    <input type="password" id="confirmPassword" class="w-full pl-10 pr-4 py-3 rounded-xl border border-slate-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-600/20 outline-none transition text-sm font-medium text-slate-900" placeholder="Ulangi kata sandi" minlength="6" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full py-3.5 mt-2 bg-blue-600 hover:bg-blue-700 text-white font-bold font-heading rounded-xl transition shadow-lg shadow-blue-600/25 text-sm flex items-center justify-center gap-2 cursor-pointer">
+                            <span>Daftar Akun Sekarang</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </form>
+
+                    <!-- Link Login -->
+                    <div class="mt-6 pt-5 border-t border-slate-100 text-center text-sm text-slate-600">
+                        Sudah punya akun portal? 
+                        <a href="login.html" class="text-blue-600 font-bold hover:underline ml-1">Masuk di sini</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-xs text-slate-500 border-t border-slate-200/70 bg-white">
+        <p>&copy; 2026 Genius Academy. All rights reserved.</p>
+    </footer>
+
+    <!-- External JavaScript -->
+    <script src="js/auth.js"></script>
+</body>
+</html>
