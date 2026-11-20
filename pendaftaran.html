@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Siswa & Akun | Genius Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Basic Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+
+  <header class="site-header header-sticky">
+    <div class="container-sm header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <span><span class="accent">Genius</span>Academy</span>
+      </a>
+      <a href="index.html" class="btn btn-outline btn-sm">
+        <i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda
+      </a>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <!-- Kolom Kiri -->
+      <div class="auth-side-dark">
+        <div>
+          <span class="cta-banner-badge">
+            <i class="fa-solid fa-user-plus"></i> Registrasi Anggota Baru
+          </span>
+          <h2>Mulai Langkah Prestasi Bersama Genius Academy</h2>
+          <p class="lead">
+            Daftarkan akunmu sekarang untuk memilih paket belajar, menjadwalkan sesi Free Trial, dan mengakses modul latihan soal terarah.
+          </p>
+
+          <div class="auth-feature-list">
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h3>Gratis 1x Sesi Free Trial & Tes Diagnostik</h3>
+                <p>Pemetaan kemampuan awal untuk menentukan kelompok belajar yang tepat.</p>
+              </div>
+            </div>
+
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h3>Klinik PR & Konsultasi Tugas Harian</h3>
+                <p>Bantuan pembahasan tugas sekolah di luar jam sesi utama tanpa biaya tambahan.</p>
+              </div>
+            </div>
+
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon"><i class="fa-solid fa-check"></i></div>
+              <div>
+                <h3>Jadwal Sesi Fleksibel</h3>
+                <p>Tersedia pilihan sesi siang, sore, dan malam dari Senin hingga Sabtu.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-feature-item" style="margin-top: 28px; flex-direction: column; gap: 12px;">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <div class="auth-feature-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <h3>Butuh Bantuan Pendaftaran?</h3>
+              <p>Admin siap membantu pilih kelas yang sesuai.</p>
+            </div>
+          </div>
+          <a href="https://wa.me/6285712636036?text=Halo%20Admin%20Genius%20Academy,%20saya%20butuh%20bantuan%20untuk%20pendaftaran%20akun%20baru." target="_blank" class="btn btn-green btn-sm btn-block">
+            <i class="fa-brands fa-whatsapp"></i> Hubungi Admin WhatsApp
+          </a>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Form Pendaftaran -->
+      <div class="auth-form-side">
+        <div style="margin-bottom: 22px;">
+          <h1 style="font-size: 1.75rem; font-weight: 800;">Buat Akun Baru</h1>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">
+            Lengkapi data di bawah ini untuk mengakses Portal Genius Academy.
+          </p>
+        </div>
+
+        <div id="alertMessage" class="alert-box alert-error hidden">
+          <i id="alertIcon" class="fa-solid fa-circle-exclamation"></i>
+          <span id="alertText">Pesan notifikasi</span>
+        </div>
+
+        <form id="registerForm">
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="nama" class="form-label">Nama Lengkap</label>
+              <div class="input-wrap">
+                <span class="input-icon"><i class="fa-solid fa-id-card"></i></span>
+                <input type="text" id="nama" class="form-control" placeholder="Nama lengkap Anda" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="role" class="form-label">Daftar Sebagai</label>
+              <div class="input-wrap">
+                <span class="input-icon"><i class="fa-solid fa-user-tag"></i></span>
+                <select id="role" class="form-control" required>
+                  <option value="siswa" selected>Siswa</option>
+                  <option value="pengajar">Pengajar / Tentor</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div id="programFieldWrapper" class="form-group">
+            <label for="programPilihan" class="form-label">Minat Jenjang / Paket Program</label>
+            <div class="input-wrap">
+              <span class="input-icon"><i class="fa-solid fa-book-open"></i></span>
+              <select id="programPilihan" class="form-control">
+                <option value="Program SD (Kelas 1 - 6)">Program SD (Kelas 1 – 6 SD)</option>
+                <option value="Program SMP (Kelas 7 - 9)" selected>Program SMP (Kelas 7 – 9 SMP)</option>
+                <option value="Program SMA Reguler (Kelas 10 - 11)">Program SMA Reguler (Kelas 10 – 11)</option>
+                <option value="Program Kelas 12 & UTBK-SNBT">Program Intensif Kelas 12 & UTBK-SNBT</option>
+                <option value="Program Alumni / Gap Year">Program Alumni / Gap Year UTBK</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="identifier" class="form-label">Username / NIS / Email</label>
+            <div class="input-wrap">
+              <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+              <input type="text" id="identifier" class="form-control" placeholder="Contoh: rizqi2026 atau email@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="form-row-2">
+            <div class="form-group">
+              <label for="password" class="form-label">Kata Sandi</label>
+              <div class="input-wrap">
+                <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+                <input type="password" id="password" class="form-control" style="padding-right: 38px;" placeholder="Min. 6 karakter" minlength="6" required>
+                <button type="button" id="togglePassword" aria-label="Tampilkan atau sembunyikan kata sandi" class="password-toggle">
+                  <i id="eyeIcon" class="fa-solid fa-eye"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirmPassword" class="form-label">Konfirmasi Sandi</label>
+              <div class="input-wrap">
+                <span class="input-icon"><i class="fa-solid fa-shield-check"></i></span>
+                <input type="password" id="confirmPassword" class="form-control" placeholder="Ulangi kata sandi" minlength="6" required>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg" style="margin-top: 6px;">
+            <span>Daftar Akun Sekarang</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div style="margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--border-color); text-align: center; font-size: 0.88rem; color: var(--text-muted);">
+          Sudah punya akun portal? 
+          <a href="login.html" class="text-primary" style="font-weight: 700; margin-left: 4px;">Masuk di sini</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-simple">
+    <p>&copy; 2026 Genius Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>

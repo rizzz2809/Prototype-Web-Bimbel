@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Masuk Portal | Genius Academy</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Basic Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+
+  <header class="site-header header-sticky">
+    <div class="container-sm header-inner">
+      <a href="index.html" class="brand-logo">
+        <span class="brand-icon"><i class="fa-solid fa-graduation-cap"></i></span>
+        <span><span class="accent">Genius</span>Academy</span>
+      </a>
+      <a href="index.html" class="btn btn-outline btn-sm">
+        <i class="fa-solid fa-arrow-left"></i> Kembali ke Beranda
+      </a>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="auth-card">
+      <!-- Kolom Kiri -->
+      <div class="auth-side-dark">
+        <div>
+          <span class="cta-banner-badge">
+            <i class="fa-solid fa-shield-halved"></i> Portal Akademik Terpadu
+          </span>
+          <h2>Selamat Datang Kembali di Genius Academy</h2>
+          <p class="lead">
+            Pantau jadwal sesi bimbingan, hasil evaluasi tryout IRT, modul bank soal HOTS, hingga laporan perkembangan belajar dalam satu dasbor terintegrasi.
+          </p>
+
+          <div class="auth-feature-list">
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon"><i class="fa-solid fa-calendar-check"></i></div>
+              <div>
+                <h3>Jadwal Sesi & Klinik PR</h3>
+                <p>Cek jadwal tatap muka kelas reguler dan reservasi sesi konsultasi tugas harian.</p>
+              </div>
+            </div>
+
+            <div class="auth-feature-item">
+              <div class="auth-feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div>
+                <h3>Analisis Skor & Rapor Bulanan</h3>
+                <p>Grafik perkembangan nilai evaluasi dan pemetaan peluang lolos sekolah/PTN impian.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="auth-stats">
+          <div>
+            <div class="auth-stat-val">92%</div>
+            <div class="auth-stat-lbl">Lolos Kampus & SMA Favorit</div>
+          </div>
+          <div>
+            <div class="auth-stat-val">Maks. 8</div>
+            <div class="auth-stat-lbl">Siswa per Kelompok Kelas</div>
+          </div>
+          <div>
+            <div class="auth-stat-val">24/7</div>
+            <div class="auth-stat-lbl">Akses Bank Soal & Modul</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kolom Kanan: Form Login -->
+      <div class="auth-form-side">
+        <div style="margin-bottom: 24px;">
+          <h1 style="font-size: 1.75rem; font-weight: 800;">Masuk ke Akun</h1>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-top: 4px;">
+            Silakan masukkan identitas akun Siswa, Pengajar, atau Admin.
+          </p>
+        </div>
+
+        <div id="errorMessage" class="alert-box alert-error hidden">
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <span id="errorText">Akun belum terdaftar</span>
+        </div>
+
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="identifier" class="form-label">Username / NIS / Email</label>
+            <div class="input-wrap">
+              <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="identifier" class="form-control" placeholder="Contoh: admin atau email@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">Kata Sandi</label>
+            <div class="input-wrap">
+              <span class="input-icon"><i class="fa-solid fa-lock"></i></span>
+              <input type="password" id="password" class="form-control" style="padding-right: 40px;" placeholder="Masukkan kata sandi" required>
+              <button type="button" id="togglePassword" aria-label="Tampilkan atau sembunyikan kata sandi" class="password-toggle">
+                <i id="eyeIcon" class="fa-solid fa-eye"></i>
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" id="submitBtn" class="btn btn-primary btn-block btn-lg">
+            <span>Masuk Sekarang</span>
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div class="demo-box">
+          <div>
+            <strong style="display: block; color: var(--text-main);"><i class="fa-solid fa-key text-primary"></i> Akun Demo Admin:</strong>
+            <span style="color: var(--text-muted);">User: <code>admin</code> &bull; Sandi: <code>123</code></span>
+          </div>
+          <button type="button" id="fillDemoAdmin" class="btn btn-outline btn-sm">Isi Otomatis</button>
+        </div>
+
+        <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center; font-size: 0.88rem; color: var(--text-muted);">
+          Belum punya akun portal? 
+          <a href="pendaftaran.html" class="text-primary" style="font-weight: 700; margin-left: 4px;">Daftar Akun Baru</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer-simple">
+    <p>&copy; 2026 Genius Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
